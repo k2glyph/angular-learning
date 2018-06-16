@@ -17,6 +17,6 @@ describe('AppComponent', () => {
   it('should render pageTitle', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const appInstance = fixture.componentInstance;
-    expect(appInstance.pageTitle).toBe('Product Management System');
+    expect(appInstance.pageTitle).toBe('User Management System');
   });
 });
