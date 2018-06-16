@@ -1,0 +1,18 @@
+.app-header{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b0202;
+    min-height: 54px;
+    color: white;
+    font-size: 24px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
