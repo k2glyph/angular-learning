@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 import { routes } from './utils/routes';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { routes } from './utils/routes';
     StarComponent,
     ProductDetailComponent,
     NotfoundComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <nav id="sidebar">
     <app-header [title]="'User Portal'" [leftNav]='false' [rightNav]='false'></app-header>
-    <ul class="list-unstyled components">
-        <li class="active"><a [routerLink]="['/']">Welcome</a></li>
-        <li class="active"><a [routerLink]="['/product']">Product</a></li>
-    </ul>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action" [routerLink]="['/']">Welcome</a>
+        <a class="list-group-item list-group-item-action"[routerLink]="['/product']">Product</a>
+    </div>
 </nav>
