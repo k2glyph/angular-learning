@@ -8,17 +8,15 @@ import { catchError, tap } from 'rxjs/operators';
 export class ProductService {
     private _productUrl = 'http://localhost:4200/assets/product.json';
 
-    constructor(private _http:HttpClient) {
+    constructor(private _http: HttpClient) {
     }
     getProducts(): Observable<IProduct[]> {
         return this._http.get<IProduct[]>(this._productUrl).pipe(
             tap(data => console.log('All: ' + JSON.stringify(data))),
             catchError(this.handleErrors)
         );
-                
-        
     }
-    private handleErrors(err: HttpErrorResponse){
+    private handleErrors(err: HttpErrorResponse) {
         console.error(err.message);
         return throwError(err.message);
     }
