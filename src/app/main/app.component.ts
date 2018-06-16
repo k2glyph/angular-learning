@@ -9,7 +9,7 @@ import { Component, OnChanges } from '@angular/core';
 })
 export default class AppComponent {
   pageTitle: string = 'User Management System';
-  toggleMenu: boolean;
+  toggleMenu: boolean = true;
 
   setToggleMenu(toggle: boolean) {
     this.toggleMenu = toggle;

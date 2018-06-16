@@ -1,4 +1,4 @@
-<div class="app-header">
+<div class="app-header" [ngStyle]="getStyles">
     <img src={{logo}} class="logo" (click)="onMenuPress()" *ngIf="leftNav">
     <div>{{title}}</div>
     <div></div>
