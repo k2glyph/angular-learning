@@ -1,5 +1,5 @@
 import { ProductService } from './../product/product.service';
-import { Component } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,6 @@ export default class AppComponent {
   toggleMenu: boolean;
 
   setToggleMenu(toggle: boolean) {
-    console.log(toggle);
+    this.toggleMenu = toggle;
   }
 }

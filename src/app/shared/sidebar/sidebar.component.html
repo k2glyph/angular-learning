@@ -1,3 +1,7 @@
-<div>
-    This is a simple side bar.
-</div>
+<nav id="sidebar">
+    <app-header [title]="'User Portal'" [leftNav]='false' [rightNav]='false'></app-header>
+    <ul class="list-unstyled components">
+        <li class="active"><a [routerLink]="['/']">Welcome</a></li>
+        <li class="active"><a [routerLink]="['/product']">Product</a></li>
+    </ul>
+</nav>

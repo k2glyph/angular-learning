@@ -1,4 +1,7 @@
-<app-header [title]=pageTitle (toggleMenuOuput)="setToggleMenu($event)"></app-header>
-<app-sidebar></app-sidebar>
-{{toggleMenu}}
-<app-product-list></app-product-list>
+<div class="wrapper">
+    <app-sidebar *ngIf="toggleMenu"></app-sidebar>
+    <div style="width:100%">
+        <app-header [title]=pageTitle (toggleMenuOuput)="setToggleMenu($event)"></app-header>
+        <router-outlet></router-outlet>
+    </div>
+</div>
