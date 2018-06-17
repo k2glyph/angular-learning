@@ -6,7 +6,7 @@ import { catchError, tap } from 'rxjs/operators';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = 'http://localhost:4200/assets/product.json';
+    private _productUrl = '/assets/product.json';
 
     constructor(private _http: HttpClient) {
     }
