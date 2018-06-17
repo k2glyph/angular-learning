@@ -1,3 +1,17 @@
 <div class="panel panel-default" *ngIf="product">
     <div class="panel-heading">{{pageTitle +' : '+ product.productName }}</div>
+    <div class="panel-body">
+        <ul class="list-group">
+                <li class="list-group-item">ProductName: {{product.productName}}</li>
+                <li class="list-group-item">ProductCode: {{product.ProductCode}}</li>
+                <li class="list-group-item">Tokyo</li>
+                <li class="list-group-item">Paris</li>
+                <li class="list-group-item">Mumbai</li>
+        </ul>
+    </div>
+    <div class="panle-footer">
+        <a class="btn btn-default" (click)="onBack()">
+            <i class="glyphicon glyphicon-chevron-left"></i>Back
+        </a>
+    </div>
 </div>

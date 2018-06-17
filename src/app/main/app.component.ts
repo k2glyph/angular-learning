@@ -1,11 +1,9 @@
-import { ProductService } from './../product/product.service';
-import { Component, OnChanges } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [ProductService]
+  styleUrls: ['./app.component.css']
 })
 export default class AppComponent {
   pageTitle: string = 'User Management System';
